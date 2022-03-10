@@ -17,7 +17,7 @@ namespace GradeCalc
 
             while(true)
             {
-                Console.WriteLine("Enter a grade or 'q' to quit");
+                Console.WriteLine("Enter any grade or 'q' to quit");
                 var input = Console.ReadLine();
 
                 if (input == "q")
