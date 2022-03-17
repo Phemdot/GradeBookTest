@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GradeCalc
 {
-    public class Book
+    public class Book : NamedObject
     {
         public Book(string name)
         {
@@ -44,7 +44,7 @@ namespace GradeCalc
             }
             else
             {
-                Console.WriteLine("Invalid Value");
+                throw new ArgumentException($"Invalid{nameof(grade)}");
             }
         }
 
